@@ -302,18 +302,6 @@ with DAG(
         df_product.to_sql(name='products',schema='public',con=engine,
                            if_exists='replace', index=False)
 
-
-        #raw
-        #id name
-        #5  test
-        #6  test
-        #1  test
-
-
-        #dim
-        #id name
-        #1  test
-        #2  test
         print("=== SEDANG INSERT SUPPLIERS")
         df_suppliers.to_sql(name='suppliers',schema='public',con=engine,
                            if_exists='replace', index=False)
